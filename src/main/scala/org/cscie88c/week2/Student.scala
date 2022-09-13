@@ -12,7 +12,6 @@ final case class Student(
                         email: String,
                         gender: String,
                         country: String,
-                        change
                         )
 
 
