@@ -8,6 +8,9 @@ class StudentTest extends StandardTest {
       "Show" in {
         val expectedResult = List("4,Delmore,Scriver,dscriver3@boston.com,Male,United States").map(Student(_))
         val nextResult = Student.apply("4,Delmore,Scriver,dscriver3@boston.com,Male,United States")
+//        println(expectedResult(0).firstName)
+//        println(nextResult.firstName)
+        expectedResult(0).firstName shouldBe(nextResult.firstName)
       }
     }
   }
