@@ -52,6 +52,10 @@ object Student{
 
 }
 
+object test3 extends App {
+  println(Student.studentNamesByCountry("United States"))
+}
+
 
 
 

@@ -8,6 +8,9 @@ class SubjectTest extends StandardTest {
       "Show Subject" in {
         val expectedResult = List("1,Physics,true").map(Subject(_))
         val nextResult = Subject.apply("1,Physics,true")
+//        println(expectedResult(0).name)
+//        println(nextResult.name)
+        expectedResult(0).name shouldBe(nextResult.name)
       }
     }
   }
