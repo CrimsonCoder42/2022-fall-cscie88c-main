@@ -8,11 +8,15 @@ object UtilFunctions{
     x <- (1 to 100).toList;
     y <- (1 to 100).toList;
     z <- (1 to 100).toList
-    if ((x*x) + (y*y) == (z*z))
+    if (pythTest(x,y,z))
 
   ) yield (x, y, z)
 
-println(pythTriplesUpto100)
+  def mult2(x: Int, y: Int): Int = x * y
+
+  def main(args: Array[String]): Unit = {
+    println(pythTriplesUpto100)
+  }
 
 }
 
